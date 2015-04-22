@@ -1,8 +1,8 @@
 var repo;
 var ghObj;
 
-var newForm = "<input type='text'id='user' size='10' />" +
-    "<input type='text' id='repo' size='10' />" +
+var newForm = "<input type='text'id='user' />" +
+    "<input type='text' id='repo' />" +
     "<button type='button' id='dataButton'>Write Data</button>" ;
 
 
@@ -32,7 +32,7 @@ function getData(){
 				      "<li>Description: " + repo.description + "</li>" +
 				      "<li>Created at: " + repo.created_at + "</li>" +
 				      "</ul><button id='write'>Write File</button>" +
-				      "<input type='text'id='text' size='10' /> " +
+				      "<input type='text'id='text'/> " +
 				      "<div id='writefile' />");
 			
 			$("#write").click(writeRepo);
